@@ -21,6 +21,7 @@ public class Main {
         ++score;
         System.out.print("D" +" ");
        }else{
+         ++score;
         System.out.print("E" +" ");
        }
      }
