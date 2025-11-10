@@ -15,10 +15,9 @@ public class Main {
         int count = 0;
         // n=10이면 1~10까지 반복 
         for(int i=1; i<=n; i++){
-            if(i%2==0 || i%3==0 || i%5==0){
+            if(i%2==0 || i%3==0 || i%5==0)
                 continue;
                 count++;
-            } 
             }
             System.out.print(count);
             }
