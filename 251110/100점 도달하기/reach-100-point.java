@@ -22,7 +22,7 @@ public class Main {
         System.out.print("D" +" ");
        }else{
          ++score;
-        System.out.print("E" +" ");
+        System.out.print("F" +" ");
        }
      }
     }
