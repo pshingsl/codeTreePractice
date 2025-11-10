@@ -7,7 +7,7 @@ public class Main {
 
         int a = sc.nextInt(); // 3
 
-        int[] arr = new int[a];
+        int[] arr = new int[a]; // 입력한 a 수만큼 길이 지정
 
         for(int i=0; i<arr.length; i++) {
             // 1 8 5 입력
