@@ -12,7 +12,7 @@ public class Main {
             sum +=i;
 
             // 6 > 5
-            if(sum>n){
+            if(sum>=n){
                 System.out.println(i);
                 break;
             }
