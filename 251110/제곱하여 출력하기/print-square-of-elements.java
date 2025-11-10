@@ -14,6 +14,8 @@ public class Main {
             arr[i] = sc.nextInt();
 
             // 1 8 5 출력
+            // System.out.print(arr[i]+ " ");
+            // 각 인덱스 제곱
             arr[i] *= arr[i];
 
             System.out.print(arr[i]+ " ");
