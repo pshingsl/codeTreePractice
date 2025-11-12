@@ -6,11 +6,11 @@ public class Main {
         int c=7;
         int tmp;
 
-        tmp =c;
-        a=tmp;
-        b=a;
-        c=b;
+        tmp =c; // 7
+        c = b;
+        b = a;
+        a = tmp;
 
-        System.out.print(a+"\n"+b+"\n"+c);
+        System.out.print(a+"\n"+b+"\n"+c); // 7 5 6
     }
 }
