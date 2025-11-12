@@ -6,8 +6,9 @@ public class Main {
         int b=2;
         int c=3;
 
-        int re=a+b+c;
+        a=b=c=a+b+c;
 
-        System.out.print(re+" "+re +" "+re);
+        System.out.print(a+" "b +" "+c);
+
     }
 }
