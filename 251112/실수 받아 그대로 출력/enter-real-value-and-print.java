@@ -5,7 +5,7 @@ public class Main {
        
        Scanner sc = new Scanner(System.in);
 
-       int n = sc.nextDouble();
+       double n = sc.nextDouble();
 
        System.out.printf("%.2f", n);
     }
