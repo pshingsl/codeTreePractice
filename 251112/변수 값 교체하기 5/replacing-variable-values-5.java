@@ -5,6 +5,6 @@ public class Main {
        int b = 6;
 
        a=b;
-       System.out.print(a+'\n'+b);
+       System.out.print(a+"\n"+b);
     }
 }
