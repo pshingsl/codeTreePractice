@@ -6,6 +6,6 @@ public class Main {
         String s = sc.next();
         String[] arr = s.split("-"); // 5-26-1994 5 26 1994분리
 
-        System.out.print(arr[2]+"."+ arr[1] +"." + arr[0]);
+        System.out.print(arr[2]+"."+ arr[0] +"." + arr[1]);
     }
 }
