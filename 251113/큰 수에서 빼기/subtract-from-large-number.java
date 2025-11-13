@@ -13,6 +13,10 @@ public class Main {
         }
 
         
+        if(b == a){
+            System.out.println(b-a);
+        }
+
         if(b>a){
             System.out.println(b-a);
         }
