@@ -7,7 +7,8 @@ public class Main {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int re = a+b;
 
-        System.out.print((a+b) + " " + (double)a/b1);
+        System.out.print(re + " " + (double)re/2);
     }
 }
