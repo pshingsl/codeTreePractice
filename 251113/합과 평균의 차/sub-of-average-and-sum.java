@@ -14,6 +14,6 @@ public class Main {
 
        System.out.println(sum);
        System.out.println(avg);
-       System.out.println(sum + avg);
+       System.out.println(sum - avg);
     }
 }
