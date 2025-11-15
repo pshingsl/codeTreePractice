@@ -12,17 +12,20 @@ public class Main {
     
         if(a>b){
             if(a>c){
-                System.out.print(1);
+                System.out.print(a);
             }
         }
 
-        if(a>b){
-            if(a>c){
-                System.out.print(1);
+        if(b>a){
+            if(b>c){
+                System.out.print(b);
             }
         }
 
-        
+        if(c>a){
+            if(c>b){
+                System.out.print(c);
+            }
+        }
         }
     }
-}
