@@ -13,19 +13,18 @@ public class Main {
         // a b c 다 비교해서 최댓갑 구하기 a>b a>c b>a b>c c>a c>b
         // 1 1 0  11
             if(a>=b){
-                if(a>=c){
+                if(a>=c)
                     System.out.print(a);
-                }else{
+                else
                     System.out.print(c);
                 }
 
                 else{
-                    if(b>=c){
+                    if(b>=c)
                     System.out.print(b);
-                    }else{
+                    else
                     System.out.print(c);
-                    }
                 }
             }
         }
-    }
+    
