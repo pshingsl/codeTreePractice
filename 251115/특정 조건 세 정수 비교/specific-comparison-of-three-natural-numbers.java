@@ -9,7 +9,7 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        if(a == b){
+        if(a == b || b==c){
             System.out.print(1+ " ");
         } else {
             System.out.print(0+ " ");
