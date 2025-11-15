@@ -14,7 +14,7 @@ public class Main {
                 System.out.print(31);
             }
        }else{
-        System.out.print(31);
+        System.out.print(30);
        }
     }
 }
