@@ -14,7 +14,7 @@ public class Main {
         if(Aage >= 19&& s.equals("M") || Bage >= 19 && m.equals("M")){
             System.out.print(1);
         }else{
-            s.equals(0);
+             System.out.print(0);
         }
 
         }
