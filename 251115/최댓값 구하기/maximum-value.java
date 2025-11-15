@@ -9,21 +9,22 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-    
-        if(a>b){
-            if(a>c){
+
+        // a b c 다 비교해서 최댓갑 구하기
+        if(a>=b){
+            if(a>=c){
                 System.out.print(a);
             }
         }
 
-        if(b>a){
-            if(b>c){
+        if(b>=a){
+            if(b>=c){
                 System.out.print(b);
             }
         }
 
-        if(c>a){
-            if(c>b){
+        if(c>=a){
+            if(c>=b){
                 System.out.print(c);
             }
         }
