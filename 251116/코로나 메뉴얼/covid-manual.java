@@ -21,7 +21,7 @@ public class Main {
             else
                System.out.print('N');  
         }else{
-            if((b>=37 && b1=='N') && (c>=37 && c1 == 'Y'))
+            if((b>=37 && b1=='Y') && (c>=37 && c1 == 'Y'))
                  System.out.println("E");
             else
                 System.out.println("N");
