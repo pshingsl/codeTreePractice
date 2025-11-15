@@ -16,10 +16,14 @@ public class Main {
             else
                 System.out.print(c);
         }else if((a <= b && a >= c) || (a >= b && a <= c)){
-            if(b>c)
+            System.out.println(a);
+        }
+        else if(a <= b && a <= c){
+            if(b>c){
                 System.out.print(c);
-            else
+            }else{
                 System.out.print(b);
+            }
         }
     }
 }
