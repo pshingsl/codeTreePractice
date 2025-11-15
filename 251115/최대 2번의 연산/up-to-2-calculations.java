@@ -6,15 +6,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int a = sc.nextInt();
+        int s=0;
 
         // a가 짝수라면 2로 나눠준다  10/2 = 5
         if(a%2==0) {
-            System.out.println((a/2)+1); 
+            a/=2;
         }
 
         // a가 홀수면 1을 더한 뒤 2로 나눠 준다. 3+1/2
         if(a%2==1) {
-            System.out.println((a+1)/2);
+            a=(a+1)/2;
         }
+
+         System.out.println(a);
     }
 }
