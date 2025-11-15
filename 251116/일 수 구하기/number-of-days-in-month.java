@@ -15,11 +15,9 @@ public class Main {
                 System.out.print(28);
             }else if(n==1 || n == 3 || n==5 || n==7 || n==8 || n==12){
                 System.out.print(31);
+            }else {
+                 System.out.print(30);
             }
-       }else{
-         if(n==4 || n==6 || n==9 || n==11){
-            System.out.print(30);
-         }
        }
     }
 }
