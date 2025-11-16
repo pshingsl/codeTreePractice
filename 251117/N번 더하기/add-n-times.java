@@ -9,8 +9,9 @@ public class Main {
        int n =  sc.nextInt();
 
       // 5~6 5+6 11+6 17+6 23+6 29+6 35+6
-       for(int i = a+n; i <= 7*n; i+=n){
-         System.out.println(i);
+       for(int i = 1; i <= n; i+=n){
+        a+=n;
+         System.out.println(a);
        }
     }
 }
