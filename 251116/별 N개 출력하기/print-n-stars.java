@@ -1,9 +1,9 @@
-import java.util.Scanenr;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
        
-        Scanenr sc = new Scanenr(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
 
