@@ -7,11 +7,12 @@ public class Main {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int c;
+       
+        System.out.print(a/b + ".");
         // 0번쨰 부터 21까지 반복
         for(int i=0; i<20; i++){
             a*=10;
-            System.out.printf(a/b);
+            System.out.print(a/b);
 
             a%=b;
         }
