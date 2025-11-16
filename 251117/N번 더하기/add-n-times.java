@@ -8,8 +8,8 @@ public class Main {
        int a =  sc.nextInt();
        int n =  sc.nextInt();
 
-      // 5~6 5+6 11+6 17+6 23+6 29+6 35+6
-       for(int i = 0; i < n; i++){
+      // 6번
+       for(int i = 1; i <= n; i++){
         a+=n;
          System.out.println(a);
        }
