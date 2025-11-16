@@ -10,6 +10,7 @@ public class Main {
        
         System.out.print(a/b + ".");
         // 0번쨰 부터 21까지 반복
+        a%=b;
         for(int i=0; i<20; i++){
             a*=10;
             System.out.print(a/b);
