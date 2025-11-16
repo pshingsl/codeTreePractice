@@ -11,9 +11,10 @@ public class Main {
 
         // N까지 3의 배수로 출력 
         while(i<=n){ // 1~27 
-                i++;
             if(i%3==0)
                 System.out.print(i+" ");
+                i++;
+                
         }
     }
 }
