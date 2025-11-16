@@ -9,7 +9,7 @@ public class Main {
 
         int i=1;
 
-        while(i<=5){
+        while(i<=n){
             System.out.println("*");
             i++;
         }
