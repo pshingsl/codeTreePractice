@@ -23,7 +23,7 @@ public class Main {
             System.out.print("D" + " ");
              i++;
         } else {
-            System.out.print("E" + " ");
+            System.out.print("F" + " ");
              i++;
         }
        }
