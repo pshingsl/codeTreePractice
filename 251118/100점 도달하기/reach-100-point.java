@@ -10,16 +10,16 @@ public class Main {
        int i=n;
 
        while(i<=100){
-        if(n>=90){
+        if(i>=90){
             System.out.print("A" + " ");
             i++;
-        } else if(n>=80) {
+        } else if(i>=80) {
             System.out.print("B" + " ");
             i++;
-        } else if(n>=70) {
+        } else if(i>=70) {
             System.out.print("C" + " ");
              i++;
-        } else if(n>=60) {
+        } else if(i>=60) {
             System.out.print("D" + " ");
              i++;
         } else {
