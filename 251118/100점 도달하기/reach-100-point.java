@@ -21,9 +21,10 @@ public class Main {
              i++;
         } else if(n>=60) {
             System.out.print("D" + " ");
+             i++;
         } else {
             System.out.print("E" + " ");
-
+             i++;
         }
        }
     }
