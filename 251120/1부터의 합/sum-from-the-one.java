@@ -8,14 +8,15 @@ public class Main {
        int sum=0;
        int m = 0;
 
-       // 1 2 3 > = 5
+       // 1 2 3 > = 5 
        for(int i=1; i<=100; i++){
         sum+=i;
         if(sum>=n){
             sum-=i;
+            System.out.print(sum);
             break;
         }
        }
-       System.out.print(sum);
+    //    System.out.print(sum);
     }
 }
