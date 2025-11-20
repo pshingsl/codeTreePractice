@@ -8,12 +8,14 @@ public class Main {
         while(true) {
             int a = sc.nextInt();
 
-            if(a%2==0){
-                a/=2;
-                a++;
-                System.out.println(a);
+            if(a%2==1)
+                continue;
+            
+            System.out.println(a/2);
+            cnt++;
+
+            if(cnt >= 3)
                 break;
-            }
         } 
     }
 }
