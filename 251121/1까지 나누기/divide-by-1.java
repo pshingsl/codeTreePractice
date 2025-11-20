@@ -5,7 +5,7 @@ ublic class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int i;
+
         for(int i=1; i<=n; i++){
             n/=i;
             if(n<=1)
