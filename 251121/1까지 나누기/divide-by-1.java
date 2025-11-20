@@ -1,16 +1,19 @@
 import java.util.Scanner;   
 
-ublic class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-
-        for(int i=1; i<=n; i++){
+        int i = 1;
+      
+        while(true){
             n/=i;
-            if(n<=1)
+            if(n<=1){
+            System.out.print(i);
             break;
+            }
+            i++;
         }
-        System.out.print(i);
     }
 }
