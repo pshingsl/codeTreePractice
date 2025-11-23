@@ -11,12 +11,14 @@ public class Main {
                 System.out.print("*");
             }
             System.out.println();
+            System.out.println();
         }
 
-          for(int i=1; i<=n; i++){
-            for(int j=n; j>=i-1; j--){
+          for(int i=2; i<=n; i++){
+            for(int j=n; j> i-1; j--){
                 System.out.print("*");
             }
+            System.out.println();
             System.out.println();
         }
     }
