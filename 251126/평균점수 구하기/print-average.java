@@ -8,9 +8,11 @@ public class Main {
         double avg = 0;
 
         for(int i = 0; i < 8; i++){
-            int n = sc.nextInt();
+            double n = sc.nextDouble();
             sum += n;
-            System.out.println(n);
         }
+
+        avg = sum/8;
+        System.out.printf("%.1f", avg);
     }
 }
