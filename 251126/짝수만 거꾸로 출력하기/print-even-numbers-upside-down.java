@@ -9,7 +9,7 @@ public class Main {
 
         int n = sc.nextInt();
         
-  Inin      int arr[];
+    int arr[];
         arr = new int[n];
         
         for(int i = n-1; 0 <= i; i--){
