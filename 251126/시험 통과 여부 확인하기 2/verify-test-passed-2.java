@@ -5,14 +5,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int cnt = 0;
-        int sum = 0;
 
         int arr[] = new int[4];
 
      
         for (int i = 0; i < n; i++) {
+                int sum = 0;
             for (int a = 0; a < 4; a++) {
-                arr[] = sc.nextInt();
+                arr[a] = sc.nextInt();
                 sum += arr[a];
             }
 
