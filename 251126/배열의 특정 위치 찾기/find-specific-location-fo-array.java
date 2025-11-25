@@ -7,16 +7,22 @@ public class Main {
         int[] arr = new int[10];
         int cnt = 0;
         int sum = 0;
+        int sum2 = 0;
 
-        for(int i =0; i < 10; i++){
+        for(int i = 0; i < 10; i++){
             arr[i] = sc.nextInt();
-
-            if(arr[i]%2==0){
-                sum += arr[i];
-                cnt++;
-            }
         }
-        double avg = (double)sum/cnt;
+
+        for(int i = 1; i <= 10; i+=2) {
+            sum += arr[i];
+        }
+
+        for (int i = 2; i < 10; i += 3) {
+            sum2 += arr[i];
+            cnt ++;
+        }
+        
+        double avg = (double) sum2 / cnt;
 
         System.out.print(sum + " " + avg);
     }
