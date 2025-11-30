@@ -3,44 +3,44 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // n은 5를 입력한다고 가정합니다.
-        int n = sc.nextInt(); 
-        int totalRows = n * 2 - 1; // n=5일 때, 총 9줄 출력
-
-        // 1. 행을 제어하는 바깥쪽 루프 (총 9줄)
-        for (int i = 1; i <= totalRows; i++) {
-            int starCount; // 현재 행에서 출력할 별의 개수
+        
+        // 1. n = int(input()) 구현
+        int n = sc.nextInt();
+        
+        // 2. 초기 변수 설정
+        int x = 1;
+        int y = n;
+        
+        // 3. for i in range(2 * n): 구현
+        // 총 2 * n 번 반복 (i는 0부터 시작)
+        for (int i = 0; i < 2 * n; i++) {
             
-            // 2. 별 개수를 계산하는 로직
-            if (i <= n) {
-                // 1행부터 n행(5행)까지의 별 개수: 1, 5, 2, 4, 3
-                // i를 5로 나눈 나머지를 사용하여 패턴을 만듭니다.
-                // 1 -> 1, 2 -> 5, 3 -> 2, 4 -> 4, 5 -> 3
+            // 4. 홀수 번째 행 (i % 2 != 0) : 별의 개수가 감소
+            if (i % 2 != 0) {
+                // for _ in range(y): print("*", end=" ") 구현
+                for (int j = 0; j < y; j++) {
+                    System.out.print("* ");
+                }
                 
-                int remainder = i % 5;
-                if (remainder == 1) starCount = 1;
-                else if (remainder == 2) starCount = 5;
-                else if (remainder == 3) starCount = 2;
-                else if (remainder == 4) starCount = 4;
-                else starCount = 3; // remainder == 0 (i=5일 때)
+                // print() 구현 (줄바꿈)
+                System.out.println();
                 
+                // y -= 1 구현
+                y--;
+                
+            // 5. 짝수 번째 행 (else) : 별의 개수가 증가
             } else {
-                // 6행부터 9행까지의 별 개수: 3, 4, 2, 5
-                // 대칭성을 이용하거나 별도의 규칙을 적용합니다.
+                // for _ in range(x): print("*", end=" ") 구현
+                for (int j = 0; j < x; j++) {
+                    System.out.print("* ");
+                }
                 
-                // 여기서는 i를 5로 나눈 나머지를 활용하는 단순화를 유지합니다.
-                int remainder = (i - 5) % 5; // 6행부터 1, 2, 3, 4...로 매핑
-                if (remainder == 1) starCount = 3; // 6행
-                else if (remainder == 2) starCount = 4; // 7행
-                else if (remainder == 3) starCount = 2; // 8행
-                else starCount = 5; // remainder == 4 (9행)
+                // print() 구현 (줄바꿈)
+                System.out.println();
+                
+                // x += 1 구현
+                x++;
             }
-            
-            // 3. 별을 출력하는 안쪽 루프
-            for (int j = 0; j < starCount; j++) {
-                System.out.print("* ");
-            }
-            System.out.println();
         }
         
         sc.close();
