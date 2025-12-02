@@ -11,7 +11,7 @@ public class Main {
                 if(j%2==0)
                     System.out.print(i+1);
                 else
-                    System.out.print(n-1);
+                    System.out.print(n-i);
             }
             System.out.println();
         }
