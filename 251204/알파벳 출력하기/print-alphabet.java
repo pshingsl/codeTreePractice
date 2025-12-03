@@ -5,11 +5,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        char cnt ='A';
-        for(int i = 0; i<n; i++){
-            for(int j = 0; j<=i; j++){
-                System.out.print(cnt);
+        
+        int cnt=0;
+
+        for(int i=0; i<n; i++){
+            for(int j=0; j<=i; j++){
+                System.out.print((char)('A'+cnt));
                 cnt++;
+                if(cnt==26){
+                    cnt=0;
+                }
             }
             System.out.println();
         }
