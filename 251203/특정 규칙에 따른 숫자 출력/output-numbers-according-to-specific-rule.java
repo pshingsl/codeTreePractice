@@ -6,15 +6,17 @@ public class Main {
 
         // 변수 선언 및 입력
         int n = sc.nextInt();
+        int cnt = 1;
 
-
-        // 숫자로 이루어진 삼각형을 출력합니다.
-        for(int i = n; i >= 1; i--) {
-            for(int j = n; j >= 1; j--) {
-                if(j > i)
-                    System.out.print("  ");
-                else
-                    System.out.print(j + " ");
+        // cnt를 이용해 숫자로 이루어진 삼각형을 출력합니다.
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < i; j++)
+                System.out.print("  ");
+            for(int j = 0; j < n - i; j++) {
+                System.out.print(cnt + " ");
+                cnt++;
+                if(cnt == 10)
+                    cnt = 1;
             }
             System.out.println();
         }
