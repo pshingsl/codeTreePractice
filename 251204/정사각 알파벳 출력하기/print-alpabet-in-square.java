@@ -24,7 +24,6 @@ public class Main {
                 if (charCode <= 'Z') {
                     // 코드 값을 문자로 변환하여 StringBuilder에 추가
                     sb.append((char) charCode);
-                    sb.append(' '); // 요구 사항에 공백이 명시되진 않았지만, 패턴 출력을 위해 한 칸 띄움
                 } else {
                     // 'Z'를 넘어가면 현재 행의 루프를 즉시 종료
                     break;
