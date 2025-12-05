@@ -13,5 +13,9 @@ public class Main {
             }
             counts[arr[i]/10]++;
         }
+
+        for(int i = 1; i < 10; i++){
+            System.out.println(i + " - " + counts[i]);
+        }
     }
 }
