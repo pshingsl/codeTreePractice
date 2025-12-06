@@ -23,5 +23,3 @@ public class Main {
         System.out.printf("%d %d",max,min);
     }
 }
-
-```이런 식으로 하나의 포문으로 작성해도 상관없나요?
