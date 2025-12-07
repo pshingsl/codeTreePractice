@@ -21,7 +21,6 @@ public class Main {
                 }
             }
         }
-        System.out.pri
-        nt(arr[0] + " " + arr[1]); 
+        System.out.print(arr[0] + " " + arr[1]); 
     }
 }
