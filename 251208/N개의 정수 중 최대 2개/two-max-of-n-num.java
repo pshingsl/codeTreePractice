@@ -1,26 +1,34 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
-        int []arr = new int[100];
-        int n = sc.nextInt();
-        int max = 0;
+        int N, i, j, x;
+        final int INT_MIN;
+        
+        INT_MIN = Integer.MIN_VALUE;
+        
+        N = sc.nextInt();
 
-        for(int i=0;i<n;i++){
-            arr[i] = sc.nextInt();
+        int[] a = new int[N + 1];
+
+        a[N] = INT_MIN;
+
+        for(i = 0 ; i < N ; i ++){
+            a[i] = sc.nextInt();
         }
 
-        for(int i=0;i<n;i++){
-            for(int j = 0; j<n; j++){
-                if(arr[j] < arr[j+1]){
-                    max = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = max;
+        for(i = 0 ; i < N ; i ++){
+            for(j = 0 ; j < N ; j ++){
+                if(a[j] < a[j + 1]){
+                    x = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = x;
                 }
             }
         }
-        System.out.print(arr[0] + " " + arr[1]); 
+        System.out.print(a[0] + " " + a[1]);
     }
 }
+
