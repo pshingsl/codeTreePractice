@@ -6,7 +6,7 @@ public class Main {
 
         String[] arr = new String[10];
  
-        for(int i = 0; i < n; i++)
+        for(int i = 0; i < 10; i++)
             arr[i] = sc.next();
 
         for(int i = 9; i >= 0; i--){
