@@ -10,7 +10,6 @@ public class Main {
             arr[i] = sc.next();
 
         for(int i = 0; i < 10; i++){
-            if(arr[i] == " ")
             System.out.println(arr[i]);
         }
     }
