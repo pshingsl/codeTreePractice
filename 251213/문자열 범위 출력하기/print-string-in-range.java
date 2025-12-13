@@ -5,6 +5,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         String str = sc.nextLine();
-        System.out.println(str.charAt(3));
+        
+        for(int i = 2; i<10; i++){
+            System.out.print(str.charAt(i));
+        }
     }
 }
