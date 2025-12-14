@@ -9,6 +9,9 @@ public class Main {
 
         for(int i = str.length()-1; i >= str.length() - n; i--){
             System.out.print(str.charAt(i));
+            if(i==0) {
+                break;
+            }
         }
     }
 }
