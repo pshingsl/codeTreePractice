@@ -10,7 +10,7 @@ public class Main {
 
         for(int i = 0; i < n; i++){
             arr[i] = sc.next();
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
     }
 }
