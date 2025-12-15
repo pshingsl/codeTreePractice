@@ -7,7 +7,7 @@ public class Main {
         String str = sc.next();
         char ch = sc.next().charAt(0);
         int len = str.length();
-        int idx = 0;
+        int idx = -1;
 
         for(int i = 0; i < len; i++){
             if(str.charAt(i) == ch){
@@ -16,7 +16,7 @@ public class Main {
             }
         }
 
-        if(idx == 0){
+        if(idx == -1){
             System.out.println("No");
         }else{
             System.out.println(idx);
