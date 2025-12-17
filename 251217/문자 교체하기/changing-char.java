@@ -7,7 +7,7 @@ public class Main {
        String str = sc.next();
        String str2 = sc.next();
 
-       str =  str.substring(0,3);
+       str =  str.substring(0,2) + "d";
        str2 = str2.substring(str2.length()-3);
 
        System.out.print(str + str2);
