@@ -5,16 +5,16 @@ public class Main {
        
        Scanner sc = new Scanner(System.in);
 
-       char C  = sc.next();
-       int N = sc.next();
+       char C  = sc.next().charAt(0);
+       int N = sc.nextInt();
        
-       for(int i = 1; i<=n; i++){
+       for(int i = 1; i<=N; i++){
         if(C == 'A'){
             System.out.print(i+" ");
         }
        }
 
-        for(int i = n; i>=n; i--){
+        for(int i = N; i>=1; i--){
         if(C == 'D'){
             System.out.print(i+" ");
         }
