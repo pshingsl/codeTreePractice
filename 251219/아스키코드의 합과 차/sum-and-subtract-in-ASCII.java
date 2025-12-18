@@ -6,12 +6,15 @@ public class Main {
 
         char ch1 = sc.next().charAt(0);
         char ch2 = sc.next().charAt(0);
-        int re = (int)ch1 + (int)ch2;
-       int re1 = Math.abs((int)ch2 - (int)ch1);
+        
+        int n1 = (int)ch1;
+        int n2 = (int)ch2;
+        System.out.print(n1+n2 + " ");
 
-        // 76 + 101
-        System.out.print(re + " " );
-        // 101 - 76
-        System.out.print(re1);
+        if(n1>n2){
+            System.out.print(n1-n2);
+        }
+          else{  System.out.print(n2-n1);
+          }
     }
 }
