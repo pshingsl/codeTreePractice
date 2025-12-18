@@ -7,7 +7,7 @@ public class Main {
         char ch1 = sc.next().charAt(0);
         char ch2 = sc.next().charAt(0);
         int re = (int)ch1 + (int)ch2;
-        int re1 = (int)ch2 - (int)ch1;
+       int re1 = Math.abs((int)ch2 - (int)ch1);
 
         // 76 + 101
         System.out.print(re + " " );
