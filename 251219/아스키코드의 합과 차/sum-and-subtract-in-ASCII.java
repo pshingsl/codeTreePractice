@@ -6,8 +6,12 @@ public class Main {
 
         char ch1 = sc.next().charAt(0);
         char ch2 = sc.next().charAt(0);
+        int re = (int)ch1 + (int)ch2;
+        int re1 = (int)ch2 - (int)ch1;
 
-        System.out.print((int)ch1 + (int)ch2 + " " );
-        System.out.print((int)ch2 - (int)ch1);
+        // 76 + 101
+        System.out.print(re + " " );
+        // 101 - 76
+        System.out.print(re1);
     }
 }
