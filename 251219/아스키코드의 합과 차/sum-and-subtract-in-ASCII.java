@@ -7,6 +7,7 @@ public class Main {
         char ch1 = sc.next().charAt(0);
         char ch2 = sc.next().charAt(0);
 
-        System.out.print((int)ch1 + (int)ch2 + " " + ((int)ch2 - (int)ch1));
+        System.out.print((int)ch1 + (int)ch2 + " " );
+        System.out.print((int)ch2 - (int)ch1);
     }
 }
