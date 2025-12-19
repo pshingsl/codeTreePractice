@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         // 1. 사용자로부터 문자열 입력받기
         Scanner scanner = new Scanner(System.in);
