@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // 1. 사용자로부터 문자열 입력받기
         Scanner scanner = new Scanner(System.in);
-        System.out.print("문자열을 입력하세요: ");
+        
         String inputString = scanner.nextLine();
         scanner.close();
 
@@ -33,6 +33,6 @@ public class Main {
         }
 
         // 4. 결과 출력
-        System.out.println("변환된 문자열: " + result.toString());
+        System.out.println(result.toString());
     }
 }
