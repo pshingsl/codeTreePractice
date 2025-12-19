@@ -1,21 +1,23 @@
-import java.util.Scanner;
-
-public class Main {
+public class CharConversionExample {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+        String str = "Hello World 123";
+        
+        // 변환된 문자열을 저장할 StringBuilder를 생성합니다.
+        StringBuilder result = new StringBuilder(); 
 
-       String str = sc.next();
-
-       for(int i = 0; i < str.length(); i++){
-        // 대문자 구분
-        if(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z'){
-            System.out.print((char)(str.charAt(i) - 'A' + 'a'));
+        for (int i = 0; i < str.length(); i++) {
+            char currentChar = str.charAt(i);
+            
+            // 현재 문자가 소문자('a'~'z')인 경우에만 대문자로 변환합니다.
+            if (currentChar >= 'a' && currentChar <= 'z') {
+                char upperChar = Character.toUpperCase(currentChar);
+                result.append(upperChar); // 변환된 대문자를 결과에 추가
+            } else {
+                result.append(currentChar); // 소문자가 아니면 (대문자, 숫자, 공백 등) 그대로 추가
+            }
         }
-
-        // 소문자 출력
-        if(str.charAt(i) >= 'a' && str.charAt(i) <= 'z'){
-            System.out.print(str.charAt(i));
-        }
-       }
+        
+        System.out.println("원본 문자열: " + str);
+        System.out.println("변환된 문자열: " + result.toString());
     }
 }
