@@ -51,13 +51,10 @@ public class Main {
         String A2 = "abcdef";
         String B2 = "defaco"; // 예상 결과: -1
 
-        System.out.println("--- 예시 1 ---");
-        System.out.println("A: " + A1 + ", B: " + B1);
-        System.out.println("최소 미는 횟수: " + getMinPushCount(A1, B1));
+
+        System.out.println( getMinPushCount(A1, B1));
         
-        System.out.println("\n--- 예시 2 ---");
-        System.out.println("A: " + A2 + ", B: " + B2);
-        System.out.println("최소 미는 횟수: " + getMinPushCount(A2, B2));
+
         
         scanner.close();
     }
