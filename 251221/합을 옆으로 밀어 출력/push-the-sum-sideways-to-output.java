@@ -11,14 +11,12 @@ public class Main {
         }
         int N = scanner.nextInt();
         
-        // **자료형을 int에서 long으로 변경하여 안전성을 극대화**
-        // N*5000 = 500,000 이므로 int로 충분하지만, 혹시 모를 테스트케이스 오류를 대비
+        // **totalSum을 long 타입으로 선언**하여 혹시 모를 오버플로우에 대비합니다.
         long totalSum = 0;
         
         // N개의 숫자를 입력받아 총합 계산
         for (int i = 0; i < N; i++) {
             if (scanner.hasNextInt()) {
-                // 입력 숫자는 5,000 이하이므로 int로 받습니다.
                 int number = scanner.nextInt();
                 totalSum += number;
             }
@@ -26,14 +24,18 @@ public class Main {
         
         scanner.close();
         
-        // 3. 총합을 문자열로 변환 (totalSum은 long 타입이지만 String.valueOf로 변환 가능)
+        // 1. 총합(long)을 문자열로 변환 (Integer.toString과 동일한 기능을 하는 String.valueOf 사용)
+        // Integer.toString()은 int 타입만 받지만, String.valueOf()는 long 타입도 처리합니다.
         String sumString = String.valueOf(totalSum);
         
-        // 4. 좌측으로 한 칸 민 결과 출력 (기존의 정확한 로직)
+        // 2. 좌측으로 한 칸 민 결과 출력 (맨 앞 글자 제거)
         if (sumString.length() > 0) {
-            // substring(1)을 사용하여 맨 앞의 한 글자를 제거합니다.
+            // substring(1): 인덱스 1부터 문자열 끝까지 추출 (맨 앞 인덱스 0 제거)
             String shiftedResult = sumString.substring(1);
             
+            // 결과 출력 (0이 있어도 생략하지 않고 모두 출력)
+            // 예: 2077 -> 077
+            // 예: 10772 -> 0772
             System.out.println(shiftedResult); 
         }
     }
