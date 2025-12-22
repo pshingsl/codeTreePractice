@@ -24,13 +24,13 @@ public class Main {
         int b = sc.nextInt();
 
         if(ch == '+'){
-            System.out.print(plus(a,b));
+            System.out.print(a + " + " + b + " = " +plus(a,b));
         }else if(ch == '-'){
-            System.out.print(minus(a,b));
+            System.out.print(a + " - " + b + " = " +minus(a,b));
         }else if(ch == '*'){
-            System.out.print(multy(a,b));
+            System.out.print(a + " * " + b + " = " +multy(a,b));
         }else if(ch == '/'){
-            System.out.print(divide(a,b));
+            System.out.print(a + " / " + b + " = " +divide(a,b));
         }
     }
 }
