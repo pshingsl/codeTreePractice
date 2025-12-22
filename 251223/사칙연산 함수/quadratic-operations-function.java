@@ -1,29 +1,35 @@
-import java.util.*;
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args){
-                Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        char sline=sc.next().charAt(0);
-        int c=sc.nextInt();
-        
-        System.out.println(a+" "+sline+" "+c+" = "+strToNumber(a,c));
-       
+     public static int plus(int a, int b){
+            return a + b;
+        }
+
+        public static int minus(int a, int b){
+            return a - b;
+        }
+
+        public static int multy(int a, int b){
+            return a * b;
+        }
+
+        public static int divide(int a, int b){
+            return a / b;
+        }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        char ch = sc.next().charAt(0);
+        int b = sc.nextInt();
+
+        if(ch == '+'){
+            System.out.print(plus(a,b));
+        }else if(ch == '-')
+            System.out.print(minus(a,b));
+        }else if(ch == '*')
+            System.out.print(multy(a,b));
+        }else if(ch == '/')
+            System.out.print(divide(a,b));
     }
-    public static int strToNumber(int a, int c){
-      
-        List<String> splitted=new ArrayList<>();
-        String sline="";
-        int number=1;
-        if(sline.contains("*"))
-            number=a*c;
-        else if(sline.contains("/"))
-            number=a/c;
-        else if(sline.contains("+"))
-            number=a+c;
-        else if(sline.contains("-"))
-            number=a-c;
-        
-        return number;
-    }
-  
 }
