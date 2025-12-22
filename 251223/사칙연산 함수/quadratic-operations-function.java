@@ -13,7 +13,7 @@ public class Main {
       
         List<String> splitted=new ArrayList<>();
         String sline="";
-        int number=0;
+        int number=1;
         if(sline.contains("*"))
             number=a*c;
         else if(sline.contains("/"))
