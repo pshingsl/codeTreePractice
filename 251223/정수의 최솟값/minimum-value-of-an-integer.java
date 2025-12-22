@@ -3,17 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static int min(int a, int b, int c){
         int small = a;
-        if(small<b){
-            if(small<c){
-                return small;
-            }
-        } else if(b<c){
+    
+        if(small > b)
             small = b;
-            return small;
-        } else {
+        
+        if(small > c)
             small = c;
-            return small;
-        }
+    
         return small;
     }
     public static void main(String[] args) {
