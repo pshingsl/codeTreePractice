@@ -2,15 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static int min(int a, int b, int c){
-        int small = a;
+        int small = 0;
         if(a<b){
             if(a<c){
-                return a;
+                small =a;
+                return small;
             }
         } else if(b<c){
-            return b;
+            small = b;
+            return small;
         } else {
-            return c;
+             small = c;
+            return small;
         }
         return small;
     }
