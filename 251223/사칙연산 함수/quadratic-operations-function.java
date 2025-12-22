@@ -31,6 +31,8 @@ public class Main {
             System.out.print(a + " * " + b + " = " +multy(a,b));
         }else if(ch == '/'){
             System.out.print(a + " / " + b + " = " +divide(a,b));
+        } else{
+            System.out.print("False");
         }
     }
 }
