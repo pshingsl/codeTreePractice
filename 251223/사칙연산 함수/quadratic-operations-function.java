@@ -25,11 +25,12 @@ public class Main {
 
         if(ch == '+'){
             System.out.print(plus(a,b));
-        }else if(ch == '-')
+        }else if(ch == '-'){
             System.out.print(minus(a,b));
-        }else if(ch == '*')
+        }else if(ch == '*'){
             System.out.print(multy(a,b));
-        }else if(ch == '/')
+        }else if(ch == '/'){
             System.out.print(divide(a,b));
+        }
     }
 }
