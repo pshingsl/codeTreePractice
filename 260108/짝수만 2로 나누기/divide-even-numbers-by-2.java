@@ -17,7 +17,7 @@ public class Main {
     public static void modify(int[] arr2){
         for(int i=0; i < arr2.length(); i++){
             if(arr2[i] % 2 == 0)
-                arr[i] /= 2;
+                arr2[i] /= 2;
         }
     }
 }
