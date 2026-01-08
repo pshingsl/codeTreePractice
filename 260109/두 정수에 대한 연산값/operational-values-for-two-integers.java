@@ -10,9 +10,9 @@ public class Main {
     }
 
     public static String sum(int a, int b){
-        if(a>b){
-            return (b*2) + " " + (a+25);
-        }else{
+        if(a>b)
+            return (a+25) + " " + (b*2);
+        else{
             return (a*2) + " " + (b+25);
         }
 
