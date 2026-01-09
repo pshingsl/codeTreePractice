@@ -16,7 +16,7 @@ public class Main {
     }
 
     public static void Arr(int arr[]){
-        for(int i=0; i < arr.length(); i++){
+        for(int i=0; i < arr.length; i++){
             arr[i] = Math.abs(arr[i]);
         }
     }
