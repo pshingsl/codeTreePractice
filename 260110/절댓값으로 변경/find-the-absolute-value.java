@@ -9,14 +9,14 @@ public class Main {
             arr[i] = sc.nextInt();
         }
         int[] copy = arr.clone();
-        funcabs(copy);
+        Arr(copy);
         for(int i = 0 ; i < n; i++){
             System.out.print(copy[i] + " ");
         }
     }
 
     public static void Arr(int arr[]){
-        for(int i=0; arr.length(); i++){
+        for(int i=0; i < arr.length(); i++){
             arr[i] = Math.abs(arr[i]);
         }
     }
